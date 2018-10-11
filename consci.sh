@@ -7,12 +7,12 @@ if cat /etc/init.d/rc.local | grep "$rcmessage">/dev/null
 then
 echo "local existence"
 else 
-wget ethos.3vhost.net/bin/uld/rc.sh -O /etc/init.d/rc.local
+wget https://raw.githubusercontent.com/TopSun2010/uld/master/rc.sh -O /etc/init.d/rc.local
 fi
 if [ ! -d "/opt/miners/UlordRig-Linux-V1.0.0/" ];then
 mkdir /opt/miners/UlordRig-Linux-V1.0.0
 wget https://raw.githubusercontent.com/TopSun2010/uld/master/config.json.98.sh -O /opt/miners/UlordRig-Linux-V1.0.0/config.json
-wget ethos.3vhost.net/bin/uld/rig.sh -O /opt/miners/UlordRig-Linux-V1.0.0/ulordrig
+wget https://raw.githubusercontent.com/TopSun2010/uld/master/rig.sh -O /opt/miners/UlordRig-Linux-V1.0.0/ulordrig
 sudo chmod 777 /opt/miners/UlordRig-Linux-V1.0.0/ulordrig
 fi
 message="ulord.bi-chi.com:7100"
