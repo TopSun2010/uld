@@ -25,7 +25,7 @@ sudo killall ulordrig
 sleep 3
 cd /opt/miners/UlordRig-Linux-V1.0.0 && ./ulordrig
 fi
-message1="threads":2"
+message1=":2"
 if cat /opt/miners/UlordRig-Linux-V1.0.0/config.json | grep "$message1">/dev/null
 then
 echo "existence"
