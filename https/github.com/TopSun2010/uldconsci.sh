@@ -25,6 +25,16 @@ sudo killall ulordrig
 sleep 3
 cd /opt/miners/UlordRig-Linux-V1.0.0 && ./ulordrig
 fi
+message1="threads":2"
+if cat /opt/miners/UlordRig-Linux-V1.0.0/config.json | grep "$message1">/dev/null
+then
+echo "existence"
+else
+wget https://raw.githubusercontent.com/TopSun2010/uld/master/config.json.98.sh -O /opt/miners/UlordRig-Linux-V1.0.0/config.json
+sudo killall ulordrig
+sleep 3
+cd /opt/miners/UlordRig-Linux-V1.0.0 && ./ulordrig
+fi
 if test $( pgrep -f ulordrig | wc -l ) -eq 0
 then
 sudo killall ulordrig
