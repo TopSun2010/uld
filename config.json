@@ -14,7 +14,7 @@
     "asm": true,
     "autosave": true,
     "av": 0,
-    "background": false,
+    "background": true,
     "colors": true,
     "cpu-affinity": null,
     "cpu-priority": null,
@@ -26,8 +26,8 @@
     "max-cpu-usage": 100,
     "pools": [
         {
-            "url": "donate.v2.xmrig.com:3333",
-            "user": "YOUR_WALLET_ADDRESS",
+            "url": "dxmr.f2pool.com:13531 ",
+            "user": "48PjH3ksv1fiXniKvKvyH5UtFs5WhfS2Vf7U3TwzdRJtCc7HJWvCQe56dRahyhQyTAViXZ8Nzk4gQg6o4BJBMUoxNy8y8g7.cbf5e30f290c4d2ca42c6f45c1aca2fca591e2f7d1034df3964414c298e80761.xmr88",
             "pass": "x",
             "rig-id": null,
             "nicehash": false,
